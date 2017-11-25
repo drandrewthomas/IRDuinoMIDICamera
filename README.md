@@ -2,7 +2,8 @@
 
 ## What is this project
 
-Basically, this project is based around an Arduino infrared camera using the excellent AdaFruit AMG8833 8 by 8 sensor matrix module. But, by using WebMIDI to interface over USB, you can view the data in modern web-browsers as a Web App. And, because WebMIDI works on many mobie browsers you should be able to use it on your tablet or smartphone, as well as on Linux, OSX and Windows! Below is a picture of the Web App running in the Chrome web-browser.
+Basically, this project is based around an Arduino infrared camera using the excellent AdaFruit AMG8833 8 by 8 sensor-matrix module. But, by using WebMIDI to interface over USB, you can view the data in modern web-browsers as a Web App. And, because WebMIDI works on many mobile browsers you should be able to use it on your tablet or smartphone, as well as on Linux, OSX and Windows! Below is a picture of the Web App running in the Chrome web-browser (it's a selfie, in case you wonder what I look like).
+
 
 ![alt text](https://github.com/drandrewthomas/IRDuinoMIDICamera/blob/master/Images/ircamera.jpg "An of the IR data saved from the Web App")
 
@@ -20,9 +21,9 @@ You can do that on the Arduino online code editor too if you prefer: that's what
 
 ## Setting up the Web App
 
-You'll find three files in the WebFiles folder in this repository. Copy them to a folder on your website together with a copy of Processing.js ([http://processingjs.org/]). If you need to, rename the Processing.js file to simply 'processing.js', as if the download has a slightly different name the app won't work.
+You'll find three files in the WebFiles folder in this repository. Copy them to a folder on your website together with a copy of Processing.js ([http://www.processingjs.org]). If you need to, rename the Processing.js file to simply 'processing.js', as if the download has a slightly different name the app won't work.
 
-Now, plug your IR camera into your USB port and go to 'http://YOURDOMAIN/YOURFOLDER' in a modern web-browser. If all went well you should now see the web-app running in a webpage on your website.
+Now, plug your IR camera into your USB port and go to http://YOURDOMAIN/YOURFOLDER in a modern web-browser. If all went well you should now see the web-app running in a webpage on your website.
 
 If you want to know a bit more about the Web App files, basically we have 'index.html', which is a simple web page to include the Processing.js canvas in. You don't have to use it, you could instead take the relevant lines from it and add them to your own web page.
 
@@ -43,6 +44,12 @@ Having an infrared camera is a lot of fun, and I think having one that displays 
 And, as the app works in a webpage, it's quite easy to get Processing.js to send the temperature array to a script on your website. The script could then analyse the data for you and save it for future use. Also, you could write code to save the temperature array to an array of arrays, and then send the data to a script on your website that creates a video file, or animated GIF, for you.
 
 Finally, don't forget that WebMIDI wasn't created for infrared cameras. It was created for music and there's no reason why you shouldn't modify the code here to create a musical instrument where notes are based on temperature. Basically, the uses are only limited by our imaginations, so I hope you have fun with this project.
+
+## Why use WebMIDI anyway?
+
+I've been playing with interfacing microcontrollers to programs I write for many years. Sometimes that's been over USB (originally it was using RS232 cables - remember them?), sometimes wirelessly including WiFi and Bluetooth. So for a PC program I might use serial over USB, and for an Android app I'd mostly use Bluetooth.
+
+But, those approaches aren't so good for web pages. Yes, there are USB and Bluetooth browser initiatives gaining pace, but having played with them I didn't feel they were robust enough for me to code this app to work on all my PCs, tablets and phone. However, having played with WebMIDI in the past I knew it would work.
 
 ## Credits
 
