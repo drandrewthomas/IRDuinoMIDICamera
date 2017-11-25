@@ -13,13 +13,13 @@ The Arduino circuit is very simple, and all you have to do is connect the four w
 
 [https://www.adafruit.com/product/3538]
 
-The Arduino code uses the USB-MIDI library. In case you don't know, Arduino USB-MIDI only works on compatible devices. Basically, you need an Arduino with a USB-connected microcontroller. Any Arduino with an Atmel 32u4 chip should work: I used a Genuino Micro which did the job very well.
-
 ## Programming the Arduino camera
 
 Once you've built your camera, and tested it with some of the AdaFruit example code, you can upload the code in the Arduino ( [http://arduino.cc] ) folder in this repository. That's no different to uploading any other Arduino program, but remember to add the AdaFruit AMG8833 library to the Arduino IDE: you can find it at the above link.
 
 You can do that on the Arduino online code editor too if you prefer: that's what I did and I have to say I was very impressed by what Arduino have done with cloud editing. When I coded this the AdaFruit library wasn't included in the IDE, so I had to upload it to my account first.
+
+The Arduino code uses the USB-MIDI library. In case you don't know, Arduino USB-MIDI only works on compatible devices. Basically, you need an Arduino with a USB-connected microcontroller. Any Arduino with an Atmel 32u4 chip should work: I used a Genuino Micro which did the job very well.
 
 ## Setting up the Web App
 
