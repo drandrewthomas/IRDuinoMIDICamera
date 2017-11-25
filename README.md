@@ -21,7 +21,7 @@ You can do that on the Arduino online code editor too if you prefer: that's what
 
 ## Setting up the Web App
 
-You'll find three files in the WebFiles folder in this repository. Copy them to a folder on your website together with a copy of Processing.js ([http://www.processingjs.org]). If you need to, rename the Processing.js file to simply 'processing.js', as if the download has a slightly different name the app won't work.
+You'll find three files in the WebFiles folder in this repository. Copy them to a folder on your website together with a copy of Processing.js ([http://processingjs.org]). If you need to, rename the Processing.js file to simply 'processing.js', as if the download has a slightly different name the app won't work.
 
 Now, plug your IR camera into your USB port and go to http://YOURDOMAIN/YOURFOLDER in a modern web-browser. If all went well you should now see the web-app running in a webpage on your website.
 
@@ -29,13 +29,13 @@ If you want to know a bit more about the Web App files, basically we have 'index
 
 'amg8833.js' is a simple JavaScript file I wrote to interface the Web App to the browser-based WebMIDI API. I based it on a JavaScript class I was playing with in the past for interfacing to USB-MIDI instruments, so I thought I'd use it for this too. However, you could easily adapt the Web App to use another MIDI library.
 
-'ircamera.pde', if you're not familiar, is the main Web App file. It's written in the Java-based Processing ([http://www.processing.org]) language, which is open-source and ideal for creating online and cloud projects like this one.
+'ircamera.pde', if you're not familiar with Processing, is the main Web App file. It's written in the Java-based Processing ([http://www.processing.org]) language, which is open-source and ideal for creating online and cloud projects like this one.
 
 ## Using the IR camera
 
 The Web App is very simple, and hopefully it's obvious how to use it. Mostly it shows the 64 infrared pixels as a simple heatmap, which should update a few times a second at most. There are also three buttons you can click. The top one allows you to toggle whether numbers are drawn for tempeatures in the matrix.
 
-Just below it is a button that lets you swap the horizontal direction of pixel dawing: usually you'd set it to normal, but when doing a selfie you use this button to swap left and right. At the bottom is a save button: click it and you can download an image of the Web App to look at later.
+Just below it is a button that lets you swap the horizontal direction of pixel drawing: usually you'd set it to normal, but when doing a selfie you use this button to swap left and right. At the bottom is a save button: click it and you can download an image of the Web App to look at later.
 
 ## What else can we do with this?
 
@@ -53,12 +53,12 @@ But, those approaches aren't so good for web pages. Yes, there are USB and Bluet
 
 ## Credits
 
-This project wouldn't have been possible with the AMG8833 module I bought from AdaFruit (and only four days from the United States to my home in the United Kingdom!):
+This project wouldn't have been possible without the AMG8833 module I bought from AdaFruit (and only four days from the United States to my home in the United Kingdom!):
 
 [https://www.adafruit.com]
 
 And, of course, who can forget the excellent Processing.js, which most of the Web App is based on:
 
-[http://processingjs.org/]
+[http://processingjs.org]
 
 
