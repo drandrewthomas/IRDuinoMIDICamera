@@ -35,7 +35,7 @@ If you want to know a bit more about the Web App files, basically we have 'index
 
 ## Using the IR camera
 
-The Web App is very simple, and hopefully it's obvious how to use it. Mostly it shows the 64 infrared pixels as a simple heatmap, which should update a few times a second at most. There are also three buttons you can click. The top one allows you to toggle whether numbers are drawn for tempeatures in the matrix.
+The Web App is very simple, and hopefully it's obvious how to use it. Mostly it shows the 64 infrared pixels as a simple heatmap, which should update a few times a second at most. There are also three buttons you can click. The top one allows you to toggle whether numbers are drawn for temperatures in the matrix.
 
 Just below it is a button that lets you swap the horizontal direction of pixel drawing: usually you'd set it to normal, but when doing a selfie you use this button to swap left and right. At the bottom is a save button: click it and you can download an image of the Web App to look at later.
 
