@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>IR MIDI camera</title>
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+  <style>
+    body {overflow: hidden;}
+    canvas
+    {
+      outline: 0px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 480;
+      height: 320;
+    }
+  </style>
+  <script src="./processing.js" type="text/javascript"></script>
+  <script src="./amg8833lib.js" type="text/javascript"></script>
+</head>
+<body>
+  <canvas id="pjscanvas" data-processing-sources="ircamera.pde"></canvas>
+</body>
+</html>
