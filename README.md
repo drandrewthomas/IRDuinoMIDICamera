@@ -15,13 +15,13 @@ The Arduino circuit is very simple, and all you have to do is connect the four w
 
 ## Programming the Arduino camera
 
-Once you've built your camera, and tested it with some of the AdaFruit example code, you can upload the code in the Arduino folder in this repository. That's no different to uploading any other Arduino program, but remember to add the AdaFruit AMG8833 library to the Arduino IDE: you can find it at the above link.
+Once you've built your camera, and tested it with some of the AdaFruit example code, you can upload the code in the Arduino ( [http://arduino.cc] ) folder in this repository. That's no different to uploading any other Arduino program, but remember to add the AdaFruit AMG8833 library to the Arduino IDE: you can find it at the above link.
 
 You can do that on the Arduino online code editor too if you prefer: that's what I did and I have to say I was very impressed by what Arduino have done with cloud editing. When I coded this the AdaFruit library wasn't included in the IDE, so I had to upload it to my account first.
 
 ## Setting up the Web App
 
-You'll find three files in the WebFiles folder in this repository. Copy them to a folder on your website together with a copy of Processing.js ([http://processingjs.org]). If you need to, rename the Processing.js file to simply 'processing.js', as if the download has a slightly different name the app won't work.
+You'll find three files in the WebFiles folder in this repository. Copy them to a folder on your website together with a copy of Processing.js ( [http://processingjs.org] ). If you need to, rename the Processing.js file to simply 'processing.js', as if the download has a slightly different name the app won't work.
 
 Now, plug your IR camera into your USB port and go to http://YOURDOMAIN/YOURFOLDER in a modern web-browser. If all went well you should now see the web-app running in a webpage on your website.
 
@@ -29,7 +29,7 @@ If you want to know a bit more about the Web App files, basically we have 'index
 
 'amg8833.js' is a simple JavaScript file I wrote to interface the Web App to the browser-based WebMIDI API. I based it on a JavaScript class I was playing with in the past for interfacing to USB-MIDI instruments, so I thought I'd use it for this too. However, you could easily adapt the Web App to use another MIDI library.
 
-'ircamera.pde', if you're not familiar with Processing, is the main Web App file. It's written in the Java-based Processing ([http://www.processing.org]) language, which is open-source and ideal for creating online and cloud projects like this one.
+'ircamera.pde', if you're not familiar with Processing, is the main Web App file. It's written in the Java-based Processing ( [http://www.processing.org] ) language, which is open-source and ideal for creating online and cloud projects like this one.
 
 ## Using the IR camera
 
